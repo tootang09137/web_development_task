@@ -1,0 +1,11 @@
+h1, p, h3, label{
+    font-family: 'Courgette', cursive;
+} /*글자 폰트 변경*/
+body{
+    background-color: #ffe6e6;
+} /*웹페이지 배경  색상 pink색*/
+div{
+    color: #ff8080;
+    margin-left: 30px;
+}
+/* div태그 왼쪽 여백, 글자 색 진한 pink색*/

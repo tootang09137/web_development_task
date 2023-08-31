@@ -1,0 +1,77 @@
+  <!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>14주차과제_임민지</title>
+    <link rel="stylesheet" href="css/product.css">
+  </head>
+    <body>
+      <div id="container">
+        <h1 id="heading">수강과목</h1>
+        <div id="prod-pic">
+          <img src="images/자바스크립트.png" alt="자바스크립트" id="script" width="200" height="200" onclick="displaySrc()">
+            <div id="small-pic"> 
+              <img src="images/웹교재.png" class="small">
+              <img src="images/자바스크립트.png" class="small small1">
+              <img src="images/css.png" class="small">
+            </div>
+        </div>			
+        <div id="desc">
+          <ul>
+            <li>과목명 : 웹개발 입문</li>
+            <li class="bluetext">교재 : DO it! HtMl+css+자바스크립트 웹 표준의 정석</li>
+            <li>강의 시간 : 매주 목 9:00~11:50</li>
+            <li>배우는 내용 : html+css+자바스크립트</li>
+            <li>교수님 : 이해신교수님</li>
+            <button>수강신청 하기</button>
+          </ul>				
+          <a href="https://www.yes24.com/Product/Goods/96674934" id="view">교재 구매하기</a>
+         	</div>
+        
+        <div id="detail">	
+          <hr>
+          <h2>책 상세 정보</h2>
+          <ul>
+            <li>출판사 : 이지스 퍼블리싱</li>
+            <li>저 자 : 고경희 지음</li>
+            <li>난이도 : 초급</li>
+            <li>학습 계획 : 30일 정석 코스, 15일 집중 코스 중 선택 </li>
+            <li>내용 : html+css+자바스크립트</li>
+            <li>가격 : 30,000원</li>
+          </ul>
+          <h3>Information1</h3>
+          <p>웹 사이트는 단순히 내용만 보여 주던 시대를 지나 애플리케이션처럼 동작하는 형태로 발전했다.</p>
+          <h3>Information2</h3>
+          <p>웹 개발은 생각보다 광범위하고 공부해야 할 것도 아주 많은 분야</p>
+    
+      </div>
+      </div>
+      <script>
+        var small1 = document.querySelector(".small1");
+        small1.onclick=function(event){
+          alert("이벤트 유형: "+event.type+", 이벤트 발생 위치: "+ event.pageX+","+event.pageY);
+        }
+        function displaySrc() {
+          var script = document.querySelector("#script");
+          alert("이미지 소스 : " + script.getAttribute("src"));
+        }
+        var script = document.querySelector("#script");
+    var smallPics = document.querySelectorAll(".small");
+    
+      
+    for(let i = 0; i < smallPics.length; i++) {
+      smallPics[i].addEventListener("click", changePic);
+    }
+
+    function changePic() {
+      var newPic = this.src;
+      script.setAttribute("src", newPic);
+    }
+    
+        
+      </script>
+    </body>
+
+  </html>

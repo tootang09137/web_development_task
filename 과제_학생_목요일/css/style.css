@@ -1,0 +1,26 @@
+h3{
+    text-decoration : underline;
+}
+.gray{
+    background-color: grey;
+    color: white;
+    border-color: gray;
+
+}
+
+.gray2{
+    background-color: grey;
+    color: white;
+    margin-left: 40%;
+    border-color: grey;
+}
+.box{
+    width: 430px;
+}
+.size2{
+    width: 350px;
+}
+.box2{
+    margin-left: 50px;
+    margin-right: 5px;
+}
